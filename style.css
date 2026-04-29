@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#6ee7b7,#60a5fa);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:white;
+    width:440px;
+    max-width:95%;
+    padding:25px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.hidden{
+    display:none;
+}
+
+input{
+    width:85%;
+    padding:12px;
+    margin:8px 0;
+    border-radius:12px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+button{
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#4338ca;
+}
+
+.choices{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin-top:20px;
+}
+
+.choice{
+    background:#f8fafc;
+    border:2px solid #ddd;
+    border-radius:18px;
+    padding:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.choice:hover{
+    transform:scale(1.08);
+    background:#eef2ff;
+}
+
+.emoji{
+    font-size:65px;
+}
+
+.battle{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+}
+
+.side{
+    width:40%;
+}
+
+.big{
+    font-size:110px;
+}
+
+.vs{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.score{
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.trophy{
+    font-size:100px;
+    margin:15px 0;
+}
+
+.blink-once{
+    animation:blinkOnce 0.5s 1;
+}
+
+@keyframes blinkOnce{
+    0%{opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:1;}
+}
+
+#finalMessage{
+    font-size:34px;
+    font-weight:bold;
+    line-height:1.4;
+}

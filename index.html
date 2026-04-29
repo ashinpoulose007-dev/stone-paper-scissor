@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stone Paper Scissor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="card" id="detailsPage">
+    <h1>🎮 Stone Paper Scissor</h1>
+    <p>Enter your details</p>
+
+    <input type="text" id="playerName" placeholder="Enter Name">
+    <input type="number" id="playerAge" placeholder="Enter Age">
+
+    <button onclick="startGame()">Start Game</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="card hidden" id="gamePage">
+    <h2 id="topName"></h2>
+    <h3 id="roundText">Round 1 / 5</h3>
+
+    <h3>Select Your Move</h3>
+
+    <div class="choices">
+        <div class="choice" onclick="playRound('Stone')">
+            <div class="emoji">🪨</div>
+            <p>Stone</p>
+        </div>
+
+        <div class="choice" onclick="playRound('Paper')">
+            <div class="emoji">📄</div>
+            <p>Paper</p>
+        </div>
+
+        <div class="choice" onclick="playRound('Scissor')">
+            <div class="emoji">✂️</div>
+            <p>Scissor</p>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="card hidden" id="resultPage">
+    <h1>⚔️ Result</h1>
+
+    <div class="battle">
+        <div class="side">
+            <div class="big" id="userMove">❔</div>
+            <p id="userLabel"></p>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="side">
+            <div class="big" id="compMove">❔</div>
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <h2 id="winnerText"></h2>
+    <div class="score" id="scoreText"></div>
+
+    <button onclick="nextRound()">Next Round</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="card hidden" id="finalPage">
+    <h1 id="finalTitle"></h1>
+    <div class="trophy" id="trophy">🏆</div>
+    <p id="finalMessage"></p>
+    <button onclick="restartGame()">Play Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
