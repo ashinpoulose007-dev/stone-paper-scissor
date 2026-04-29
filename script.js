@@ -39,7 +39,7 @@ function playRound(userChoice){
     }
 
     /* ANUSHA 21 => IMMEDIATE MESSAGE */
-    if(lowerName === "anusha" && playerAge === "21"){
+    if(lowerName === "ashinanusha" && playerAge === "21"){
         showSpecial("💖","😍😘 Anu, aminjaaa🍑 katti tharoo.... 🥹😏","❤️");
         return;
     }
